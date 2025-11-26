@@ -7,18 +7,46 @@
 // Valor total da compra acima de R$ 200,00: desconto de 20%.
 // Exiba o valor final da compra com o desconto aplicado.
 
-alert("Informe o valor total de sua compra")
 
-let valor = Number ( prompt("Digite o valor"));
 
-if ( valor == 100){
-    console.log("Sem desconto")
-}
-else if (valor >=100.01 && valor<= 200) {
-     console.log("10% de Desconto")
-}
+// alert("Informe o valor total de sua compra")
 
-else if (valor >=200.01) {
-    console.log("20% de Desconto")
+// let valor = Number ( prompt("Digite o valor"));
+
+// if ( valor == 100){
+//     console.log("Sem desconto")
+// }
+// else if (valor >=100.01 && valor<= 200) {
+//      console.log("10% de Desconto")
+// }
+
+// else if (valor >=200.01) {
+//     console.log("20% de Desconto")
     
+// }
+
+//  ou 
+
+let valortotalcompra = parseFloat(prompt("Digite o valor total da compra: "))
+
+let desconto;
+
+if (valortotalcompra <= 100) {
+    desconto = 0
 }
+
+//else if(valortotalcompra > 100 && valortotalcompra <= 200 )
+else if(valortotalcompra <= 200)
+{
+//desconto = 10/100;
+desconto = 0,1;
+}
+
+else{
+//desconto = 20/100
+desconto = 0.20
+}
+
+let valorfinal = valortotalcompra - (valortotalcompra*desconto)
+
+alert(valorfinal);

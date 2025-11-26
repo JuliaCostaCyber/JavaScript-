@@ -17,4 +17,4 @@ alert ("Os números estão em ordem decrescente")
 
 if (primeiroNumero <= segundoNumero && segundoNumero >= terceiroNumero) {
      alert (" Os números estão em ordem aleatória")
-}
+};
