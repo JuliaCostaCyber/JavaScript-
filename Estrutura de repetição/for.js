@@ -11,8 +11,8 @@
 
 // a variavel i vale 0 ou seja essa variavel armazena as voltas 
 // as condições verifica o numero que o loop está
-for (let i = 1; i <= 10; i = i + 1){
-    console.log("A volta que for está é: " + i );
+for (let i = 1; i <= 10; i = i + 1) {
+    console.log("A volta que for está é: " + i);
 
 }
 
